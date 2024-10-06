@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/seaGreen">
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/seaGreen">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER PAGE"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_below="@+id/login_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/regProfile"
+        android:src="@drawable/ic_photo"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/regUsrName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="5dp"
+        android:layout_below="@+id/regProfile"
+        app:cardBackgroundColor="@color/oxfordBlue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="User Name"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:background="@null"
+        android:textColorHint="@color/gray"
+        android:inputType="text" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/regPassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="5dp"
+        android:layout_below="@+id/regUsrName"
+        app:cardBackgroundColor="@color/oxfordBlue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Password"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/regPass2Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="5dp"
+        android:layout_below="@+id/regPassName"
+        app:cardBackgroundColor="@color/oxfordBlue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="Retype Password"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:background="@null"
+        android:textColorHint="@color/gray"
+        />
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/just_click_me"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/regPass2Name"/>
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:background="@drawable/just_click_me"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing user! Go to Sign in page"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnsignup"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignin"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/github"
+            android:layout_marginEnd="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/github" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/instagram" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

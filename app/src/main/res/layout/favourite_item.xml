@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="35dp"
+    app:cardBackgroundColor="@color/oxfordBlue"
+    android:foreground="@drawable/movie_card_selector">
+
+        <TextView
+            android:id="@+id/fav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite Movie"
+            android:padding="12dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:layoutDirection="ltr"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/fav_movie_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="12"
+        />
+
+    <ImageView
+        android:id="@+id/liked_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_like_holow" />
+
+</androidx.cardview.widget.CardView>
+
+
+

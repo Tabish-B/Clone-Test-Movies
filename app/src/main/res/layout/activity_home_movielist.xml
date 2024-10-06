@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seaGreen">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/seaGreen"
+    tools:context=".home.MovieListActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layoutDirection="ltr">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_launcher_background" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/uName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:layout_marginStart="30dp"
+            android:textAllCaps="true"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_margin="8dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/oxfordBlue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="8dp"
+        app:queryBackground="@android:color/transparent"
+        app:submitBackground="@android:color/transparent"
+        android:textColor="?android:textColorHint"
+        android:theme="@style/searchBar"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search Movies"/>
+
+    <ImageButton
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="20dp"
+        android:background="@color/oxfordBlue"
+        android:clickable="true"
+        android:contentDescription="@string/Movie_Name_Card"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_mic" />
+</androidx.cardview.widget.CardView>
+
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_to_disappear"
+    android:layout_margin="8dp"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="7dp"
+    app:cardBackgroundColor="@color/oxfordBlue"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Action"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/adventure"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Adventure"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/horror"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Horror"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/romance"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Romance"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crime"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Crime"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/comedy"
+                android:backgroundTint="@color/seaGreen"
+                android:text="Comedy"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    app:cardBackgroundColor="@color/oxfordBlue"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+</ScrollView>
